@@ -1,0 +1,189 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    scroll-behavior: smooth;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+}
+h1 {
+    color: #333;
+    background-color: #7abff0; /* Light Blue */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #282c34;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar a {
+    color: #61dafb;
+    margin: 0 20px;
+    text-decoration: none;
+}
+.navbar a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Section Styling */
+.section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Section Headers */
+.section h2 {
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 { background-color: #fff3e0; } /* Deep Orange */
+.section h2 {
+    color: #000000; /* Black text */
+}
+
+.skills h2 { background-color: #4a927c; } /* Light Green */
+.section h2 {
+    color: #000000; /* Black text */
+}
+
+.projects h2 { background-color: #aaf496; } /* Purple */
+.section h2 {
+    color: #000000; /* Black text */
+}
+
+.education h2 { background-color: #94d4f6; } /* Blue */
+.section h2 {
+    color: #000000; /* Black text */
+}
+
+.resume h2 { background-color: #b3e5fc; } /* Teal */
+.section h2 {
+    color: #000000; /* Black text */
+}
+
+.contact h2 { background-color: #ffe0b2; } /* Amber */
+.section h2 {
+    color: #000000; /* Black text */
+}
+
+
+/* Add a shadow effect to the Education section */
+.education {
+    box-shadow: 0 5px 15px rgba(0, 136, 209, 0.3);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+/* Skills Section */
+.skill {
+    margin-bottom: 20px;
+}
+.skill h2 {
+    margin-bottom: 5px;
+    color: #333;
+    text-align: left;
+}
+.skill p {
+    margin: 0;
+    padding: 5px;
+    border-radius: 5px;
+}
+.expert {
+    background-color: #9ee5ec; /* Light Green */
+}
+.intermediate {
+    background-color: #ffecb3; /* Light Yellow */
+}
+.beginner {
+    background-color: #ffcdd2; /* Light Red */
+}
+.right {
+    text-align: right;
+}
+.center {
+    text-align: center;
+}
+.left {
+    text-align: left;
+}
+/* Animations */
+@keyframes slideLeft {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+@keyframes slideUp {
+    from { transform: translateY(100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Animating Specific Sections */
+.about { animation: slideLeft 1s ease; }
+.resume { animation: fadeIn 1s ease; }
+.contact { animation: slideUp 1s ease; }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    p {
+        line-height: 1.5;
+        letter-spacing: 0.5px;
+        word-spacing: 3px;
+    }
+    .navbar {
+        font-size: 1em;
+        padding: 15px;
+    }
+    .navbar a {
+        display: block;
+        padding: 10px 0;
+    }
+}
+
+/* Footer */
+.footer {
+    background-color: #282c34;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
